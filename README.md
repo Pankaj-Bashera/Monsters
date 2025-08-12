@@ -34,4 +34,3 @@ This project was developed during the **Summer PEP (Programming Enhancement Prog
   - Optimal Path Length
 
 ---
-install -r requirements.txt
