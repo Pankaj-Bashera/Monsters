@@ -1,12 +1,49 @@
-# React + Vite
+# 🐉 Monster Problem Simulation – CSES Inspired  
+*A Summer PEP Class Project*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Algorithms](https://img.shields.io/badge/Algorithms-BFS%2C%20Dijkstra%2C%20A*-orange)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
+The **Monster Problem Simulation** models a grid-based environment where a player must escape from monsters using pathfinding and survival strategies.  
+It is inspired by a **CSES problem** and extended to test AI behavior, survival optimization, and simulation performance.
 
-## Expanding the ESLint configuration
+This project was developed during the **Summer PEP (Programming Enhancement Program)** to explore:
+- Advanced pathfinding algorithms
+- AI-driven movement
+- Risk-aware strategy planning
+- Simulation analysis & visualization
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎮 Features
+- **Grid-Based Simulation** – N×M grid with walls, exits, player & monster positions.
+- **Monster AI** – BFS (primary) with optional DFS, A*, Greedy Best-First Search.
+- **Player Escape Strategies**:
+  - Random Movement (baseline)
+  - Shortest Path to Exit (Dijkstra’s)
+  - Risk-Aware Pathfinding (avoids high monster density)
+- **Visualization** – Matplotlib animations, color-coded cells.
+- **Performance Metrics**:
+  - Survival Time
+  - Escape Probability
+  - Optimal Path Length
+
+---
+
+## ⚙️ Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/monster-problem-simulation.git
+cd monster-problem-simulation
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
